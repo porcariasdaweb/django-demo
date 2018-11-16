@@ -1,6 +1,8 @@
 version: "3"
 services:
   sut:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
 #    command: test
     entrypoint: ["/home/app/run_tests.sh"]
