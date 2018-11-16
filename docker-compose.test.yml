@@ -2,4 +2,4 @@ version: "3"
 services:
   sut:
     build: .
-    command: /home/app/run_tests.sh
+    command: run_tests.sh
