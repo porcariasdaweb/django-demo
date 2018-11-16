@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo ${DOCKERFILE_PATH}
+echo ${IMAGE_NAME}
+docker build --build-arg CUSTOM=my_var -f ${DOCKERFILE_PATH} -t ${IMAGE_NAME} ..
