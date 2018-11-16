@@ -1,5 +1,7 @@
 FROM python
 WORKDIR /home/app
+ARG CUSTOM
+ENV CUSTOM=${CUSTOM:-undefined}
 COPY . .
 RUN pip install pipenv && \
     pipenv install --system && \
