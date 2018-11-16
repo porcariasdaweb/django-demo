@@ -2,4 +2,5 @@ version: "3"
 services:
   sut:
     build: .
-    command: run_tests.sh
+#    command: test
+    entrypoint: ["/home/app/run_tests.sh"]
